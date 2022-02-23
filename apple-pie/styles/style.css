@@ -1,0 +1,72 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,300,600,700,900');
+
+body {
+    margin: 0px;
+    font-family: "Poppins";
+}
+
+.header {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+	background-image: url("../images/apple-pie.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 575px;
+}
+
+h1 {
+    margin-top: 0px;
+    color: white;
+    font-family: "Poppins";
+    font-size: 5em;
+    font-weight: 300;
+}
+
+h2 {
+    margin: 30px;
+    font-weight:normal;
+}
+
+ul {
+    list-style-type: '-';
+}
+
+ol {
+    counter-reset: list;
+}
+
+ol > li {
+    list-style: none;
+}
+
+ol > li:before {
+    content: counter(list) ") ";
+    counter-increment: list;
+}
+
+img {
+    height: 60px;
+    display: block;
+    margin: 30px auto;
+}
+
+.intro {
+    margin: 50px 100px 0px 100px;;
+    text-align: center;
+}
+
+.intro img { 
+    height: 45px;
+    display: block;
+    margin: 10px auto;
+}
+
+.ingredients {
+    margin: 0px 100px;
+}
+
+.directions {
+    margin: 0px 100px 60px 100px;
+}
